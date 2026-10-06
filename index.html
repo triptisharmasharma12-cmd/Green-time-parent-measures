@@ -214,7 +214,9 @@ button {
 
 <form id="questionnaire">
 
+<!-- ===================================================== -->
 <!-- INTRODUCTION -->
+<!-- ===================================================== -->
 
 <section class="question active">
 
@@ -330,7 +332,9 @@ Start Questionnaire / प्रश्नावली शुरू करें
 </section>
 
 
+<!-- ===================================================== -->
 <!-- DEMOGRAPHIC INFORMATION -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -347,15 +351,20 @@ development, social background, and environmental conditions.
 <label>
 Name / नाम <span class="required">*</span>
 </label>
+
 <input type="text" name="name" required>
+
 
 <label>
 Age / आयु <span class="required">*</span>
 </label>
+
 <input type="number" name="age" required>
 
+
 <label>
-Grade in which your child studies / बच्चे की कक्षा <span class="required">*</span>
+Grade in which your child studies / बच्चे की कक्षा
+<span class="required">*</span>
 </label>
 
 <label class="option">
@@ -373,8 +382,10 @@ Class 7 / कक्षा 7
 Class 8 / कक्षा 8
 </label>
 
+
 <label>
-Relationship to the child / बच्चे के साथ संबंध <span class="required">*</span>
+Relationship to the child / बच्चे के साथ संबंध
+<span class="required">*</span>
 </label>
 
 <label class="option">
@@ -395,7 +406,9 @@ Guardian / अभिभावक
 </section>
 
 
+<!-- ===================================================== -->
 <!-- AREA -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -425,7 +438,9 @@ Rural / ग्रामीण क्षेत्र
 </section>
 
 
+<!-- ===================================================== -->
 <!-- EDUCATION -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -467,12 +482,17 @@ Doctorate / डॉक्टरेट
 Other / अन्य
 </label>
 
-<input type="text" name="education_other" placeholder="If other, please specify">
+<input
+type="text"
+name="education_other"
+placeholder="If other, please specify">
 
 </section>
 
 
+<!-- ===================================================== -->
 <!-- FAMILY -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -502,7 +522,9 @@ Single Parent / एकल अभिभावक परिवार
 </section>
 
 
-<!-- CHILDREN -->
+<!-- ===================================================== -->
+<!-- NUMBER OF CHILDREN -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -514,16 +536,37 @@ How many children do you have?
 आपके कितने बच्चे हैं?
 </p>
 
-<label class="option"><input type="radio" name="number_children" value="0" required>0</label>
-<label class="option"><input type="radio" name="number_children" value="1">1</label>
-<label class="option"><input type="radio" name="number_children" value="2">2</label>
-<label class="option"><input type="radio" name="number_children" value="3">3</label>
-<label class="option"><input type="radio" name="number_children" value="More than 3">More than 3 / 3 से अधिक</label>
+<label class="option">
+<input type="radio" name="number_children" value="0" required>
+0
+</label>
+
+<label class="option">
+<input type="radio" name="number_children" value="1">
+1
+</label>
+
+<label class="option">
+<input type="radio" name="number_children" value="2">
+2
+</label>
+
+<label class="option">
+<input type="radio" name="number_children" value="3">
+3
+</label>
+
+<label class="option">
+<input type="radio" name="number_children" value="More than 3">
+More than 3 / 3 से अधिक
+</label>
 
 </section>
 
 
+<!-- ===================================================== -->
 <!-- OCCUPATION -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -540,7 +583,9 @@ What do you do for a living?
 </section>
 
 
+<!-- ===================================================== -->
 <!-- INCOME -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -552,19 +597,52 @@ What is your annual income?
 आपके परिवार की वार्षिक आय कितनी है?
 </p>
 
-<label class="option"><input type="radio" name="annual_income" value="Less than 1 lakh" required>Less than 1 lakh / 1 लाख से कम</label>
-<label class="option"><input type="radio" name="annual_income" value="1–3 lakh">1–3 lakh / 1–3 लाख</label>
-<label class="option"><input type="radio" name="annual_income" value="3–5 lakh">3–5 lakh / 3–5 लाख</label>
-<label class="option"><input type="radio" name="annual_income" value="5–7.5 lakh">5–7.5 lakh / 5–7.5 लाख</label>
-<label class="option"><input type="radio" name="annual_income" value="7.5–10 lakh">7.5–10 lakh / 7.5–10 लाख</label>
-<label class="option"><input type="radio" name="annual_income" value="10–20 lakh">10–20 lakh / 10–20 लाख</label>
-<label class="option"><input type="radio" name="annual_income" value="More than 20 lakh">More than 20 lakh / 20 लाख से अधिक</label>
-<label class="option"><input type="radio" name="annual_income" value="Prefer not to say">Prefer not to say / बताना नहीं चाहते</label>
+<label class="option">
+<input type="radio" name="annual_income" value="Less than 1 lakh" required>
+Less than 1 lakh / 1 लाख से कम
+</label>
+
+<label class="option">
+<input type="radio" name="annual_income" value="1–3 lakh">
+1–3 lakh / 1–3 लाख
+</label>
+
+<label class="option">
+<input type="radio" name="annual_income" value="3–5 lakh">
+3–5 lakh / 3–5 लाख
+</label>
+
+<label class="option">
+<input type="radio" name="annual_income" value="5–7.5 lakh">
+5–7.5 lakh / 5–7.5 लाख
+</label>
+
+<label class="option">
+<input type="radio" name="annual_income" value="7.5–10 lakh">
+7.5–10 lakh / 7.5–10 लाख
+</label>
+
+<label class="option">
+<input type="radio" name="annual_income" value="10–20 lakh">
+10–20 lakh / 10–20 लाख
+</label>
+
+<label class="option">
+<input type="radio" name="annual_income" value="More than 20 lakh">
+More than 20 lakh / 20 लाख से अधिक
+</label>
+
+<label class="option">
+<input type="radio" name="annual_income" value="Prefer not to say">
+Prefer not to say / बताना नहीं चाहते
+</label>
 
 </section>
 
 
+<!-- ===================================================== -->
 <!-- MONITORING -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -589,7 +667,9 @@ No / नहीं
 </section>
 
 
+<!-- ===================================================== -->
 <!-- HEALTH -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -603,14 +683,27 @@ may affect their participation in the study activities?
 जो इस अध्ययन की गतिविधियों में उनकी भागीदारी को प्रभावित कर सकता है?
 </p>
 
-<label class="option"><input type="radio" name="health_condition" value="Yes" required>Yes / हाँ</label>
-<label class="option"><input type="radio" name="health_condition" value="No">No / नहीं</label>
-<label class="option"><input type="radio" name="health_condition" value="Prefer not to disclose">Prefer not to disclose / बताना नहीं चाहते</label>
+<label class="option">
+<input type="radio" name="health_condition" value="Yes" required>
+Yes / हाँ
+</label>
+
+<label class="option">
+<input type="radio" name="health_condition" value="No">
+No / नहीं
+</label>
+
+<label class="option">
+<input type="radio" name="health_condition" value="Prefer not to disclose">
+Prefer not to disclose / बताना नहीं चाहते
+</label>
 
 </section>
 
 
+<!-- ===================================================== -->
 <!-- CONDITIONS -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -630,7 +723,10 @@ ADHD
 </label>
 
 <label class="option">
-<input type="checkbox" name="conditions" value="Specific learning difficulty, such as Dyslexia">
+<input
+type="checkbox"
+name="conditions"
+value="Specific learning difficulty, such as Dyslexia">
 Specific learning difficulty, such as Dyslexia /
 विशिष्ट अधिगम संबंधी कठिनाई, जैसे डिस्लेक्सिया
 </label>
@@ -653,7 +749,9 @@ Prefer not to disclose / बताना नहीं चाहते
 </section>
 
 
+<!-- ===================================================== -->
 <!-- GREEN TIME 1 -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -665,13 +763,22 @@ Is your child enrolled in the Superhumane Evolutionary Scheme (SES)?
 क्या आपका बच्चा सुपरह्यूमन इवोल्यूशनरी स्कीम (SES) में नामांकित है?
 </p>
 
-<label class="option"><input type="radio" name="ses_enrolled" value="Yes" required>Yes / हाँ</label>
-<label class="option"><input type="radio" name="ses_enrolled" value="No">No / नहीं</label>
+<label class="option">
+<input type="radio" name="ses_enrolled" value="Yes" required>
+Yes / हाँ
+</label>
+
+<label class="option">
+<input type="radio" name="ses_enrolled" value="No">
+No / नहीं
+</label>
 
 </section>
 
 
+<!-- ===================================================== -->
 <!-- GREEN TIME 2 -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -685,12 +792,17 @@ When did your child enroll in the Superhumane Evolutionary Scheme (SES)?
 [तारीख लिखें]
 </p>
 
-<input type="date" name="ses_enrollment_date" required>
+<input
+type="date"
+name="ses_enrollment_date"
+required>
 
 </section>
 
 
+<!-- ===================================================== -->
 <!-- GREEN TIME 3 -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -702,14 +814,37 @@ How often does your child participate in SES during the day?
 आपका बच्चा दिन में कितनी बार SES में भाग लेता है?
 </p>
 
-<label class="option"><input type="radio" name="ses_daily_frequency" value="One time in a day" required>One time in a day / दिन में एक बार</label>
-<label class="option"><input type="radio" name="ses_daily_frequency" value="Two times in a day">Two times in a day / दिन में दो बार</label>
-<label class="option"><input type="radio" name="ses_daily_frequency" value="All Shifts">All Shifts / सभी पालियाँ</label>
+<label class="option">
+<input
+type="radio"
+name="ses_daily_frequency"
+value="One time in a day"
+required>
+One time in a day / दिन में एक बार
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="ses_daily_frequency"
+value="Two times in a day">
+Two times in a day / दिन में दो बार
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="ses_daily_frequency"
+value="All Shifts">
+All Shifts / सभी पालियाँ
+</label>
 
 </section>
 
 
+<!-- ===================================================== -->
 <!-- GREEN TIME 4 -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -721,16 +856,53 @@ How often does your child participate in SES during the week?
 आपका बच्चा सप्ताह में कितनी बार SES में भाग लेता है?
 </p>
 
-<label class="option"><input type="radio" name="ses_weekly_frequency" value="Never" required>Never / कभी नहीं</label>
-<label class="option"><input type="radio" name="ses_weekly_frequency" value="Rarely [1-2 times in a week]">Rarely [1–2 times in a week] / कभी-कभार [सप्ताह में 1–2 बार]</label>
-<label class="option"><input type="radio" name="ses_weekly_frequency" value="Sometimes [3-4 times in a week]">Sometimes [3–4 times in a week] / कभी-कभी [सप्ताह में 3–4 बार]</label>
-<label class="option"><input type="radio" name="ses_weekly_frequency" value="Often [5-6 times in a week]">Often [5–6 times in a week] / अक्सर [सप्ताह में 5–6 बार]</label>
-<label class="option"><input type="radio" name="ses_weekly_frequency" value="Daily">Daily / प्रतिदिन</label>
+<label class="option">
+<input
+type="radio"
+name="ses_weekly_frequency"
+value="Never"
+required>
+Never / कभी नहीं
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="ses_weekly_frequency"
+value="Rarely [1-2 times in a week]">
+Rarely [1–2 times in a week] / कभी-कभार [सप्ताह में 1–2 बार]
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="ses_weekly_frequency"
+value="Sometimes [3-4 times in a week]">
+Sometimes [3–4 times in a week] / कभी-कभी [सप्ताह में 3–4 बार]
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="ses_weekly_frequency"
+value="Often [5-6 times in a week]">
+Often [5–6 times in a week] / अक्सर [सप्ताह में 5–6 बार]
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="ses_weekly_frequency"
+value="Daily">
+Daily / प्रतिदिन
+</label>
 
 </section>
 
 
+<!-- ===================================================== -->
 <!-- GREEN TIME 5 -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -749,23 +921,98 @@ yoga, meditation, exercise, or other activities in or around natural environment
 <div class="dual-section">
 
 <div class="day-box">
+
 <h3>On school days / स्कूल के दिनों में</h3>
 
-<label class="option"><input type="radio" name="green_time_school_day" value="1 hour" required>1 hour / 1 घंटा</label>
-<label class="option"><input type="radio" name="green_time_school_day" value="2 hours">2 hours / 2 घंटे</label>
-<label class="option"><input type="radio" name="green_time_school_day" value="3 hours">3 hours / 3 घंटे</label>
-<label class="option"><input type="radio" name="green_time_school_day" value="4 hours">4 hours / 4 घंटे</label>
-<label class="option"><input type="radio" name="green_time_school_day" value="More than 4 hours">More than 4 hours / 4 घंटे से अधिक</label>
+<label class="option">
+<input
+type="radio"
+name="green_time_school_day"
+value="1 hour"
+required>
+1 hour / 1 घंटा
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="green_time_school_day"
+value="2 hours">
+2 hours / 2 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="green_time_school_day"
+value="3 hours">
+3 hours / 3 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="green_time_school_day"
+value="4 hours">
+4 hours / 4 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="green_time_school_day"
+value="More than 4 hours">
+More than 4 hours / 4 घंटे से अधिक
+</label>
+
 </div>
 
+
 <div class="day-box">
+
 <h3>On holidays / छुट्टी के दिनों में</h3>
 
-<label class="option"><input type="radio" name="green_time_holiday" value="1 hour" required>1 hour / 1 घंटा</label>
-<label class="option"><input type="radio" name="green_time_holiday" value="2 hours">2 hours / 2 घंटे</label>
-<label class="option"><input type="radio" name="green_time_holiday" value="3 hours">3 hours / 3 घंटे</label>
-<label class="option"><input type="radio" name="green_time_holiday" value="4 hours">4 hours / 4 घंटे</label>
-<label class="option"><input type="radio" name="green_time_holiday" value="More than 4 hours">More than 4 hours / 4 घंटे से अधिक</label>
+<label class="option">
+<input
+type="radio"
+name="green_time_holiday"
+value="1 hour"
+required>
+1 hour / 1 घंटा
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="green_time_holiday"
+value="2 hours">
+2 hours / 2 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="green_time_holiday"
+value="3 hours">
+3 hours / 3 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="green_time_holiday"
+value="4 hours">
+4 hours / 4 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="green_time_holiday"
+value="More than 4 hours">
+More than 4 hours / 4 घंटे से अधिक
+</label>
+
 </div>
 
 </div>
@@ -773,7 +1020,9 @@ yoga, meditation, exercise, or other activities in or around natural environment
 </section>
 
 
+<!-- ===================================================== -->
 <!-- GREEN TIME 6 -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -787,18 +1036,71 @@ How physically active is your child after school or in the evening
 (जैसे पैदल चलना, नृत्य करना, व्यायाम करना, खेल खेलना या इसी तरह की अन्य गतिविधियाँ)?
 </p>
 
-<label class="option"><input type="radio" name="physical_activity" value="Not active at all, mostly sedentary" required>Not active at all, mostly sedentary / बिल्कुल भी सक्रिय नहीं, अधिकतर समय बैठे रहते हैं</label>
-<label class="option"><input type="radio" name="physical_activity" value="Less than 30 minutes">Less than 30 minutes / 30 मिनट से कम</label>
-<label class="option"><input type="radio" name="physical_activity" value="30–60 minutes">30–60 minutes / 30–60 मिनट</label>
-<label class="option"><input type="radio" name="physical_activity" value="1–2 hours">1–2 hours / 1–2 घंटे</label>
-<label class="option"><input type="radio" name="physical_activity" value="2–3 hours">2–3 hours / 2–3 घंटे</label>
-<label class="option"><input type="radio" name="physical_activity" value="More than 3 hours">More than 3 hours / 3 घंटे से अधिक</label>
-<label class="option"><input type="radio" name="physical_activity" value="Do not know / Do not want to answer">Do not know / Do not want to answer / पता नहीं / उत्तर नहीं देना चाहते</label>
+<label class="option">
+<input
+type="radio"
+name="physical_activity"
+value="Not active at all, mostly sedentary"
+required>
+Not active at all, mostly sedentary /
+बिल्कुल भी सक्रिय नहीं, अधिकतर समय बैठे रहते हैं
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="physical_activity"
+value="Less than 30 minutes">
+Less than 30 minutes / 30 मिनट से कम
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="physical_activity"
+value="30–60 minutes">
+30–60 minutes / 30–60 मिनट
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="physical_activity"
+value="1–2 hours">
+1–2 hours / 1–2 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="physical_activity"
+value="2–3 hours">
+2–3 hours / 2–3 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="physical_activity"
+value="More than 3 hours">
+More than 3 hours / 3 घंटे से अधिक
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="physical_activity"
+value="Do not know / Do not want to answer">
+Do not know / Do not want to answer /
+पता नहीं / उत्तर नहीं देना चाहते
+</label>
 
 </section>
 
 
+<!-- ===================================================== -->
 <!-- SLEEP 1 -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -813,21 +1115,98 @@ How many hours does your child sleep?
 <div class="dual-section">
 
 <div class="day-box">
+
 <h3>On school days / स्कूल के दिनों में</h3>
-<label class="option"><input type="radio" name="sleep_hours_school_day" value="Less than 5 hours" required>Less than 5 hours / 5 घंटे से कम</label>
-<label class="option"><input type="radio" name="sleep_hours_school_day" value="6 hours">6 hours / 6 घंटे</label>
-<label class="option"><input type="radio" name="sleep_hours_school_day" value="7 hours">7 hours / 7 घंटे</label>
-<label class="option"><input type="radio" name="sleep_hours_school_day" value="8 hours">8 hours / 8 घंटे</label>
-<label class="option"><input type="radio" name="sleep_hours_school_day" value="More than 8 hours">More than 8 hours / 8 घंटे से अधिक</label>
+
+<label class="option">
+<input
+type="radio"
+name="sleep_hours_school_day"
+value="Less than 5 hours"
+required>
+Less than 5 hours / 5 घंटे से कम
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="sleep_hours_school_day"
+value="6 hours">
+6 hours / 6 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="sleep_hours_school_day"
+value="7 hours">
+7 hours / 7 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="sleep_hours_school_day"
+value="8 hours">
+8 hours / 8 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="sleep_hours_school_day"
+value="More than 8 hours">
+More than 8 hours / 8 घंटे से अधिक
+</label>
+
 </div>
 
+
 <div class="day-box">
+
 <h3>On holidays / छुट्टी के दिनों में</h3>
-<label class="option"><input type="radio" name="sleep_hours_holiday" value="Less than 5 hours" required>Less than 5 hours / 5 घंटे से कम</label>
-<label class="option"><input type="radio" name="sleep_hours_holiday" value="6 hours">6 hours / 6 घंटे</label>
-<label class="option"><input type="radio" name="sleep_hours_holiday" value="7 hours">7 hours / 7 घंटे</label>
-<label class="option"><input type="radio" name="sleep_hours_holiday" value="8 hours">8 hours / 8 घंटे</label>
-<label class="option"><input type="radio" name="sleep_hours_holiday" value="More than 8 hours">More than 8 hours / 8 घंटे से अधिक</label>
+
+<label class="option">
+<input
+type="radio"
+name="sleep_hours_holiday"
+value="Less than 5 hours"
+required>
+Less than 5 hours / 5 घंटे से कम
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="sleep_hours_holiday"
+value="6 hours">
+6 hours / 6 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="sleep_hours_holiday"
+value="7 hours">
+7 hours / 7 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="sleep_hours_holiday"
+value="8 hours">
+8 hours / 8 घंटे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="sleep_hours_holiday"
+value="More than 8 hours">
+More than 8 hours / 8 घंटे से अधिक
+</label>
+
 </div>
 
 </div>
@@ -835,7 +1214,9 @@ How many hours does your child sleep?
 </section>
 
 
+<!-- ===================================================== -->
 <!-- SLEEP 2 -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -850,32 +1231,161 @@ At what time does your child wake up in the morning?
 <div class="dual-section">
 
 <div class="day-box">
+
 <h3>On school days / स्कूल के दिनों में</h3>
 
-<label class="option"><input type="radio" name="wake_time_school_day" value="Earlier than 06:00 am" required>Earlier than 06:00 am / सुबह 06:00 बजे से पहले</label>
-<label class="option"><input type="radio" name="wake_time_school_day" value="06:00 am–06:30 am">06:00 am–06:30 am / सुबह 06:00–06:30 बजे</label>
-<label class="option"><input type="radio" name="wake_time_school_day" value="06:30 am–07:00 am">06:30 am–07:00 am / सुबह 06:30–07:00 बजे</label>
-<label class="option"><input type="radio" name="wake_time_school_day" value="07:00 am–07:30 am">07:00 am–07:30 am / सुबह 07:00–07:30 बजे</label>
-<label class="option"><input type="radio" name="wake_time_school_day" value="07:30 am–08:00 am">07:30 am–08:00 am / सुबह 07:30–08:00 बजे</label>
-<label class="option"><input type="radio" name="wake_time_school_day" value="08:00 am–08:30 am">08:00 am–08:30 am / सुबह 08:00–08:30 बजे</label>
-<label class="option"><input type="radio" name="wake_time_school_day" value="08:30 am–09:00 am">08:30 am–09:00 am / सुबह 08:30–09:00 बजे</label>
-<label class="option"><input type="radio" name="wake_time_school_day" value="09:00 am–09:30 am">09:00 am–09:30 am / सुबह 09:00–09:30 बजे</label>
-<label class="option"><input type="radio" name="wake_time_school_day" value="Later than 09:30 am">Later than 09:30 am / सुबह 09:30 बजे के बाद</label>
+<label class="option">
+<input
+type="radio"
+name="wake_time_school_day"
+value="Earlier than 06:00 am"
+required>
+Earlier than 06:00 am / सुबह 06:00 बजे से पहले
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_school_day"
+value="06:00 am–06:30 am">
+06:00 am–06:30 am / सुबह 06:00–06:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_school_day"
+value="06:30 am–07:00 am">
+06:30 am–07:00 am / सुबह 06:30–07:00 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_school_day"
+value="07:00 am–07:30 am">
+07:00 am–07:30 am / सुबह 07:00–07:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_school_day"
+value="07:30 am–08:00 am">
+07:30 am–08:00 am / सुबह 07:30–08:00 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_school_day"
+value="08:00 am–08:30 am">
+08:00 am–08:30 am / सुबह 08:00–08:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_school_day"
+value="08:30 am–09:00 am">
+08:30 am–09:00 am / सुबह 08:30–09:00 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_school_day"
+value="09:00 am–09:30 am">
+09:00 am–09:30 am / सुबह 09:00–09:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_school_day"
+value="Later than 09:30 am">
+Later than 09:30 am / सुबह 09:30 बजे के बाद
+</label>
 
 </div>
 
+
 <div class="day-box">
+
 <h3>On holidays / छुट्टी के दिनों में</h3>
 
-<label class="option"><input type="radio" name="wake_time_holiday" value="Earlier than 06:00 am" required>Earlier than 06:00 am / सुबह 06:00 बजे से पहले</label>
-<label class="option"><input type="radio" name="wake_time_holiday" value="06:00 am–06:30 am">06:00 am–06:30 am / सुबह 06:00–06:30 बजे</label>
-<label class="option"><input type="radio" name="wake_time_holiday" value="06:30 am–07:00 am">06:30 am–07:00 am / सुबह 06:30–07:00 बजे</label>
-<label class="option"><input type="radio" name="wake_time_holiday" value="07:00 am–07:30 am">07:00 am–07:30 am / सुबह 07:00–07:30 बजे</label>
-<label class="option"><input type="radio" name="wake_time_holiday" value="07:30 am–08:00 am">07:30 am–08:00 am / सुबह 07:30–08:00 बजे</label>
-<label class="option"><input type="radio" name="wake_time_holiday" value="08:00 am–08:30 am">08:00 am–08:30 am / सुबह 08:00–08:30 बजे</label>
-<label class="option"><input type="radio" name="wake_time_holiday" value="08:30 am–09:00 am">08:30 am–09:00 am / सुबह 08:30–09:00 बजे</label>
-<label class="option"><input type="radio" name="wake_time_holiday" value="09:00 am–09:30 am">09:00 am–09:30 am / सुबह 09:00–09:30 बजे</label>
-<label class="option"><input type="radio" name="wake_time_holiday" value="Later than 09:30 am">Later than 09:30 am / सुबह 09:30 बजे के बाद</label>
+<label class="option">
+<input
+type="radio"
+name="wake_time_holiday"
+value="Earlier than 06:00 am"
+required>
+Earlier than 06:00 am / सुबह 06:00 बजे से पहले
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_holiday"
+value="06:00 am–06:30 am">
+06:00 am–06:30 am / सुबह 06:00–06:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_holiday"
+value="06:30 am–07:00 am">
+06:30 am–07:00 am / सुबह 06:30–07:00 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_holiday"
+value="07:00 am–07:30 am">
+07:00 am–07:30 am / सुबह 07:00–07:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_holiday"
+value="07:30 am–08:00 am">
+07:30 am–08:00 am / सुबह 07:30–08:00 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_holiday"
+value="08:00 am–08:30 am">
+08:00 am–08:30 am / सुबह 08:00–08:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_holiday"
+value="08:30 am–09:00 am">
+08:30 am–09:00 am / सुबह 08:30–09:00 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_holiday"
+value="09:00 am–09:30 am">
+09:00 am–09:30 am / सुबह 09:00–09:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="wake_time_holiday"
+value="Later than 09:30 am">
+Later than 09:30 am / सुबह 09:30 बजे के बाद
+</label>
 
 </div>
 
@@ -884,7 +1394,9 @@ At what time does your child wake up in the morning?
 </section>
 
 
+<!-- ===================================================== -->
 <!-- SLEEP 3 -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -899,28 +1411,129 @@ When does your child usually go to sleep?
 <div class="dual-section">
 
 <div class="day-box">
+
 <h3>On school days / स्कूल के दिनों में</h3>
 
-<label class="option"><input type="radio" name="bedtime_school_day" value="Earlier than 09:00 pm" required>Earlier than 09:00 pm / रात 09:00 बजे से पहले</label>
-<label class="option"><input type="radio" name="bedtime_school_day" value="09:00 pm–09:30 pm">09:00 pm–09:30 pm / रात 09:00–09:30 बजे</label>
-<label class="option"><input type="radio" name="bedtime_school_day" value="09:30 pm–10:00 pm">09:30 pm–10:00 pm / रात 09:30–10:00 बजे</label>
-<label class="option"><input type="radio" name="bedtime_school_day" value="10:00 pm–10:30 pm">10:00 pm–10:30 pm / रात 10:00–10:30 बजे</label>
-<label class="option"><input type="radio" name="bedtime_school_day" value="10:30 pm–11:00 pm">10:30 pm–11:00 pm / रात 10:30–11:00 बजे</label>
-<label class="option"><input type="radio" name="bedtime_school_day" value="11:00 pm–11:30 pm">11:00 pm–11:30 pm / रात 11:00–11:30 बजे</label>
-<label class="option"><input type="radio" name="bedtime_school_day" value="Later than 11:30 pm">Later than 11:30 pm / रात 11:30 बजे के बाद</label>
+<label class="option">
+<input
+type="radio"
+name="bedtime_school_day"
+value="Earlier than 09:00 pm"
+required>
+Earlier than 09:00 pm / रात 09:00 बजे से पहले
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_school_day"
+value="09:00 pm–09:30 pm">
+09:00 pm–09:30 pm / रात 09:00–09:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_school_day"
+value="09:30 pm–10:00 pm">
+09:30 pm–10:00 pm / रात 09:30–10:00 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_school_day"
+value="10:00 pm–10:30 pm">
+10:00 pm–10:30 pm / रात 10:00–10:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_school_day"
+value="10:30 pm–11:00 pm">
+10:30 pm–11:00 pm / रात 10:30–11:00 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_school_day"
+value="11:00 pm–11:30 pm">
+11:00 pm–11:30 pm / रात 11:00–11:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_school_day"
+value="Later than 11:30 pm">
+Later than 11:30 pm / रात 11:30 बजे के बाद
+</label>
 
 </div>
 
+
 <div class="day-box">
+
 <h3>On holidays / छुट्टी के दिनों में</h3>
 
-<label class="option"><input type="radio" name="bedtime_holiday" value="Earlier than 09:00 pm" required>Earlier than 09:00 pm / रात 09:00 बजे से पहले</label>
-<label class="option"><input type="radio" name="bedtime_holiday" value="09:00 pm–09:30 pm">09:00 pm–09:30 pm / रात 09:00–09:30 बजे</label>
-<label class="option"><input type="radio" name="bedtime_holiday" value="09:30 pm–10:00 pm">09:30 pm–10:00 pm / रात 09:30–10:00 बजे</label>
-<label class="option"><input type="radio" name="bedtime_holiday" value="10:00 pm–10:30 pm">10:00 pm–10:30 pm / रात 10:00–10:30 बजे</label>
-<label class="option"><input type="radio" name="bedtime_holiday" value="10:30 pm–11:00 pm">10:30 pm–11:00 pm / रात 10:30–11:00 बजे</label>
-<label class="option"><input type="radio" name="bedtime_holiday" value="11:00 pm–11:30 pm">11:00 pm–11:30 pm / रात 11:00–11:30 बजे</label>
-<label class="option"><input type="radio" name="bedtime_holiday" value="Later than 11:30 pm">Later than 11:30 pm / रात 11:30 बजे के बाद</label>
+<label class="option">
+<input
+type="radio"
+name="bedtime_holiday"
+value="Earlier than 09:00 pm"
+required>
+Earlier than 09:00 pm / रात 09:00 बजे से पहले
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_holiday"
+value="09:00 pm–09:30 pm">
+09:00 pm–09:30 pm / रात 09:00–09:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_holiday"
+value="09:30 pm–10:00 pm">
+09:30 pm–10:00 pm / रात 09:30–10:00 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_holiday"
+value="10:00 pm–10:30 pm">
+10:00 pm–10:30 pm / रात 10:00–10:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_holiday"
+value="10:30 pm–11:00 pm">
+10:30 pm–11:00 pm / रात 10:30–11:00 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_holiday"
+value="11:00 pm–11:30 pm">
+11:00 pm–11:30 pm / रात 11:00–11:30 बजे
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="bedtime_holiday"
+value="Later than 11:30 pm">
+Later than 11:30 pm / रात 11:30 बजे के बाद
+</label>
 
 </div>
 
@@ -929,7 +1542,9 @@ When does your child usually go to sleep?
 </section>
 
 
+<!-- ===================================================== -->
 <!-- SLEEP 4 -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -942,12 +1557,19 @@ Does your child take a nap or sleep during the daytime?
 </p>
 
 <label class="option">
-<input type="radio" name="daytime_nap" value="Yes" required>
+<input
+type="radio"
+name="daytime_nap"
+value="Yes"
+required>
 Yes / हाँ
 </label>
 
 <label class="option">
-<input type="radio" name="daytime_nap" value="No">
+<input
+type="radio"
+name="daytime_nap"
+value="No">
 No / नहीं
 </label>
 
@@ -957,12 +1579,16 @@ If yes, approximately how many hours does your child sleep during the day?
 यदि हाँ, तो आपका बच्चा दिन में लगभग कितने घंटे सोता है?
 </label>
 
-<input type="text" name="daytime_sleep_hours">
+<input
+type="text"
+name="daytime_sleep_hours">
 
 </section>
 
 
+<!-- ===================================================== -->
 <!-- SUBMIT -->
+<!-- ===================================================== -->
 
 <section class="question">
 
@@ -978,7 +1604,9 @@ Thank you for completing the questionnaire.
 प्रश्नावली पूरी करने के लिए धन्यवाद।
 </p>
 
-<button type="submit" class="submit">
+<button
+type="submit"
+class="submit">
 Submit / जमा करें
 </button>
 
@@ -994,10 +1622,16 @@ Submit / जमा करें
 
 <script>
 
+/* ========================================================
+   QUESTION NAVIGATION
+======================================================== */
+
 const questions = document.querySelectorAll(".question");
+
 let current = 0;
 
 const form = document.getElementById("questionnaire");
+
 
 function showQuestion(index) {
 
@@ -1005,7 +1639,8 @@ function showQuestion(index) {
     q.classList.toggle("active", i === index);
   });
 
-  const oldButtons = document.querySelector(".navigation");
+  const oldButtons =
+    document.querySelector(".navigation");
 
   if (oldButtons) {
     oldButtons.remove();
@@ -1013,20 +1648,39 @@ function showQuestion(index) {
 
   if (index > 0 && index < questions.length - 1) {
 
-    const nav = document.createElement("div");
+    const nav =
+      document.createElement("div");
+
     nav.className = "buttons navigation";
 
-    const back = document.createElement("button");
-    back.type = "button";
-    back.className = "back";
-    back.textContent = "Back / पीछे";
-    back.onclick = previousQuestion;
 
-    const next = document.createElement("button");
+    const back =
+      document.createElement("button");
+
+    back.type = "button";
+
+    back.className = "back";
+
+    back.textContent =
+      "Back / पीछे";
+
+    back.onclick =
+      previousQuestion;
+
+
+    const next =
+      document.createElement("button");
+
     next.type = "button";
+
     next.className = "next";
-    next.textContent = "Next / आगे";
-    next.onclick = nextQuestion;
+
+    next.textContent =
+      "Next / आगे";
+
+    next.onclick =
+      nextQuestion;
+
 
     nav.appendChild(back);
     nav.appendChild(next);
@@ -1035,14 +1689,26 @@ function showQuestion(index) {
 
   } else if (index === questions.length - 1) {
 
-    const nav = document.createElement("div");
-    nav.className = "buttons navigation";
+    const nav =
+      document.createElement("div");
 
-    const back = document.createElement("button");
+    nav.className =
+      "buttons navigation";
+
+
+    const back =
+      document.createElement("button");
+
     back.type = "button";
+
     back.className = "back";
-    back.textContent = "Back / पीछे";
-    back.onclick = previousQuestion;
+
+    back.textContent =
+      "Back / पीछे";
+
+    back.onclick =
+      previousQuestion;
+
 
     nav.appendChild(back);
 
@@ -1050,14 +1716,21 @@ function showQuestion(index) {
   }
 }
 
+
+/* ========================================================
+   VALIDATE CURRENT QUESTION
+======================================================== */
+
 function validateCurrent() {
 
-  const currentQuestion = questions[current];
+  const currentQuestion =
+    questions[current];
 
   const requiredInputs =
     currentQuestion.querySelectorAll(
       "input[required]"
     );
+
 
   for (const input of requiredInputs) {
 
@@ -1069,23 +1742,38 @@ function validateCurrent() {
         );
 
       const checked =
-        Array.from(group).some(x => x.checked);
+        Array.from(group).some(
+          x => x.checked
+        );
 
       if (!checked) {
-        alert("Please answer this question / कृपया इस प्रश्न का उत्तर दें।");
+
+        alert(
+          "Please answer this question / कृपया इस प्रश्न का उत्तर दें।"
+        );
+
         return false;
       }
 
     } else if (!input.value.trim()) {
 
-      alert("Please answer this question / कृपया इस प्रश्न का उत्तर दें।");
+      alert(
+        "Please answer this question / कृपया इस प्रश्न का उत्तर दें।"
+      );
+
       input.focus();
+
       return false;
     }
   }
 
   return true;
 }
+
+
+/* ========================================================
+   NEXT QUESTION
+======================================================== */
 
 function nextQuestion() {
 
@@ -1094,82 +1782,214 @@ function nextQuestion() {
   }
 
   if (current < questions.length - 1) {
+
     current++;
+
     showQuestion(current);
-    window.scrollTo(0,0);
+
+    window.scrollTo(0, 0);
   }
 }
+
+
+/* ========================================================
+   PREVIOUS QUESTION
+======================================================== */
 
 function previousQuestion() {
 
   if (current > 0) {
+
     current--;
+
     showQuestion(current);
-    window.scrollTo(0,0);
+
+    window.scrollTo(0, 0);
   }
 }
 
 
-form.addEventListener("submit", async function(e) {
+/* ========================================================
+   FORM SUBMISSION
+======================================================== */
 
-  e.preventDefault();
+form.addEventListener(
+  "submit",
+  async function(e) {
 
-  if (!validateCurrent()) {
-    return;
-  }
+    e.preventDefault();
 
-  const formData = new FormData(form);
-  const data = {};
 
-  for (const [key, value] of formData.entries()) {
-
-    if (data[key]) {
-      data[key] += ", " + value;
-    } else {
-      data[key] = value;
+    if (!validateCurrent()) {
+      return;
     }
-  }
 
-  const submitButton =
-    document.querySelector(".submit");
 
-  submitButton.disabled = true;
-  submitButton.textContent = "Submitting...";
+    const formData =
+      new FormData(form);
 
-  try {
+    const data = {};
 
-    await fetch(
-      "https://script.google.com/macros/s/"https://script.google.com/macros/s/AKfycbzbQ1LPefjhOObgCVbZw6XWl934FjaUSZLa5eE3KSD8dIWJsj8dHsAcWKIkwEzxSjtT/exec",
-      {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "text/plain;charset=utf-8"
-        },
-        body: JSON.stringify(data)
+
+    /* Collect all questionnaire responses */
+
+    for (const [key, value] of formData.entries()) {
+
+      if (data[key]) {
+
+        data[key] +=
+          ", " + value;
+
+      } else {
+
+        data[key] = value;
       }
-    );
+    }
 
-    document.querySelector(".card").innerHTML = `
-      <div class="success">
-        <h1>Thank You / धन्यवाद</h1>
-        <p>Your response has been recorded successfully.</p>
-        <p>आपकी प्रतिक्रिया सफलतापूर्वक दर्ज कर ली गई है।</p>
-      </div>
-    `;
 
-  } catch (error) {
+    /* ====================================================
+       DATE + TIME TIMESTAMP
+       
+       Example:
+       06-Oct-2026 01:25 PM
+    ==================================================== */
 
-    submitButton.disabled = false;
-    submitButton.textContent = "Submit / जमा करें";
+    const now = new Date();
 
-    alert(
-      "There was a problem submitting the response. Please try again."
-    );
+    const month =
+      now.toLocaleString(
+        "en-US",
+        { month: "short" }
+      );
+
+    const day =
+      String(
+        now.getDate()
+      ).padStart(2, "0");
+
+    const year =
+      now.getFullYear();
+
+    const time =
+      now.toLocaleTimeString(
+        "en-US",
+        {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: true
+        }
+      );
+
+    const timestamp =
+      day +
+      "-" +
+      month +
+      "-" +
+      year +
+      " " +
+      time;
+
+
+    /* Add timestamp to submitted data */
+
+    data.submittedAt =
+      timestamp;
+
+
+    /* ====================================================
+       SUBMIT BUTTON
+    ==================================================== */
+
+    const submitButton =
+      document.querySelector(".submit");
+
+    submitButton.disabled = true;
+
+    submitButton.textContent =
+      "Submitting...";
+
+
+    /* ====================================================
+       GOOGLE APPS SCRIPT
+    ==================================================== */
+
+    try {
+
+      await fetch(
+
+        "https://script.google.com/macros/s/AKfycbzbQ1LPefjhOObgCVbZw6XWl934FjaUSZLa5eE3KSD8dIWJsj8dHsAcWKIkwEzxSjtT/exec",
+
+        {
+
+          method: "POST",
+
+          mode: "no-cors",
+
+          headers: {
+
+            "Content-Type":
+              "text/plain;charset=utf-8"
+
+          },
+
+          body:
+            JSON.stringify(data)
+
+        }
+
+      );
+
+
+      /* ==================================================
+         SUCCESS MESSAGE
+      ================================================== */
+
+      document.querySelector(
+        ".card"
+      ).innerHTML = `
+
+        <div class="success">
+
+          <h1>
+            Thank You / धन्यवाद
+          </h1>
+
+          <p>
+            Your response has been recorded successfully.
+          </p>
+
+          <p>
+            आपकी प्रतिक्रिया सफलतापूर्वक दर्ज कर ली गई है।
+          </p>
+
+        </div>
+
+      `;
+
+
+    } catch (error) {
+
+      submitButton.disabled =
+        false;
+
+      submitButton.textContent =
+        "Submit / जमा करें";
+
+
+      alert(
+        "There was a problem submitting the response. Please try again."
+      );
+
+      console.error(error);
+    }
+
   }
+);
 
-});
 
+/* ========================================================
+   START QUESTIONNAIRE
+======================================================== */
 
 showQuestion(0);
 
