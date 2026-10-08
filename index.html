@@ -311,35 +311,6 @@ button {
 
 <form id="questionnaire">
 
-function image(file, alt = "Question image") {
-
-  return `
-    <div class="question-image-wrap">
-
-      <img
-        class="question-image"
-        src="${encodeURI(file)}"
-        alt="${alt}"
-        onerror="this.style.display='none'">
-
-    </div>
-  `;
-
-}
-
-
-function largeImage(file, alt = "Question image") {
-
-  return `
-    <img
-      class="large-question-image"
-      src="${encodeURI(file)}"
-      alt="${alt}"
-      onerror="this.style.display='none'">
-  `;
-
-}
-  
 <!-- ===================================================== -->
 <!-- INTRODUCTION -->
 <!-- ===================================================== -->
@@ -457,42 +428,6 @@ Start Questionnaire / प्रश्नावली शुरू करें
 
 </section>
 
-const IMG = {
-
-  /* DEMOGRAPHIC */
-
-  urban:
-  "Urban Life.png",
-
-  suburban:
-  "Suburban Life.png",
-
-  rural:
-  "Rural Life.png",
-
-  education:
-  "highest education.jpg",
-
-  joint:
-  "joint family.png",
-
-  nuclear:
-  "nuclear family.png",
-
-  singleParent:
-  "single parent family.png",
-
-  occupation:
-  "occupation.png",
-
-  parentsMonitor:
-  "parents monitor.png",
-
-  health:
-  "health related.png"
-
-};
-  
 <!-- ===================================================== -->
 <!-- DEMOGRAPHIC INFORMATION -->
 <!-- ===================================================== -->
@@ -1031,6 +966,12 @@ Prefer not to disclose / बताना नहीं चाहते
 
 <h2>Green Time Measurement / ग्रीन टाइम मापन</h2>
 
+<img
+  class="large-question-image"
+  src="SES.png"
+  alt="Superhumane Evolutionary Scheme (SES)">
+
+
 <p>
 Is your child enrolled in the Superhumane Evolutionary Scheme (SES)?
 <br>
@@ -1058,6 +999,12 @@ No / नहीं
 
 <h2>Green Time Measurement / ग्रीन टाइम मापन</h2>
 
+<img
+  class="large-question-image"
+  src="SES.png"
+  alt="Superhumane Evolutionary Scheme (SES)">
+
+
 <p>
 When did your child enroll in the Superhumane Evolutionary Scheme (SES)?
 [Mention Date]
@@ -1081,6 +1028,12 @@ required>
 <section class="question">
 
 <h2>Green Time Measurement / ग्रीन टाइम मापन</h2>
+
+<img
+  class="large-question-image"
+  src="SES.png"
+  alt="Superhumane Evolutionary Scheme (SES)">
+
 
 <p>
 How often does your child participate in SES during the day?
@@ -1123,6 +1076,12 @@ All Shifts / सभी पालियाँ
 <section class="question">
 
 <h2>Green Time Measurement / ग्रीन टाइम मापन</h2>
+
+<img
+  class="large-question-image"
+  src="SES.png"
+  alt="Superhumane Evolutionary Scheme (SES)">
+
 
 <p>
 How often does your child participate in SES during the week?
@@ -1181,6 +1140,12 @@ Daily / प्रतिदिन
 <section class="question">
 
 <h2>Green Time Measurement / ग्रीन टाइम मापन</h2>
+
+<img
+  class="large-question-image"
+  src="non screen.png"
+  alt="Non-screen recreational activities">
+
 
 <p>
 How much total time does your child spend each day in recreational,
@@ -1380,6 +1345,12 @@ Do not know / Do not want to answer /
 
 <h2>Sleep Measures / नींद का मापन</h2>
 
+<img
+  class="large-question-image"
+  src="sleep hours.png"
+  alt="Sleep hours">
+
+
 <p>
 How many hours does your child sleep?
 <br>
@@ -1495,6 +1466,12 @@ More than 8 hours / 8 घंटे से अधिक
 <section class="question">
 
 <h2>Sleep Measures / नींद का मापन</h2>
+
+<img
+  class="large-question-image"
+  src="wake up time.png"
+  alt="Wake-up time">
+
 
 <p>
 At what time does your child wake up in the morning?
@@ -1676,6 +1653,12 @@ Later than 09:30 am / सुबह 09:30 बजे के बाद
 
 <h2>Sleep Measures / नींद का मापन</h2>
 
+<img
+  class="large-question-image"
+  src="sleep time.png"
+  alt="Sleep time">
+
+
 <p>
 When does your child usually go to sleep?
 <br>
@@ -1823,6 +1806,12 @@ Later than 11:30 pm / रात 11:30 बजे के बाद
 <section class="question">
 
 <h2>Sleep Measures / नींद का मापन</h2>
+
+<img
+  class="large-question-image"
+  src="daytime nap.png"
+  alt="Daytime nap">
+
 
 <p>
 Does your child take a nap or sleep during the daytime?
