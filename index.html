@@ -119,7 +119,104 @@ input[type="date"] {
   width: 18px;
   height: 18px;
 }
+/* =====================================================
+   QUESTION IMAGES
+   ===================================================== */
 
+.question-image-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px 0 24px;
+}
+
+.question-image {
+  width: 100%;
+  max-width: 760px;
+  height: 340px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: auto;
+  border-radius: 16px;
+  border: 1px solid #c8e6c9;
+  background: #ffffff;
+  padding: 8px;
+}
+
+
+/* =====================================================
+   LARGE QUESTION IMAGE
+   ===================================================== */
+
+.large-question-image {
+  width: 100%;
+  max-width: 800px;
+  height: 420px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 18px auto 25px;
+  border-radius: 16px;
+  border: 1px solid #c8e6c9;
+  background: #ffffff;
+  padding: 8px;
+}
+
+
+/* =====================================================
+   IMAGE OPTIONS
+   ===================================================== */
+
+.image-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  align-items: start;
+}
+
+.image-option {
+  border: 1px solid #c8e6c9;
+  border-radius: 16px;
+  background: #f9fff9;
+  padding: 12px;
+  cursor: pointer;
+  transition: .2s;
+  text-align: center;
+}
+
+.image-option:hover {
+  background: #f1f8e9;
+  border-color: #81c784;
+  transform: translateY(-2px);
+}
+
+.image-option img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 12px;
+  background: #ffffff;
+  padding: 5px;
+}
+
+.image-option label {
+  margin: 0;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+}
+
+.image-option input {
+  margin-right: 7px;
+  transform: scale(1.15);
+}
+  
 .dual-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -214,6 +311,35 @@ button {
 
 <form id="questionnaire">
 
+function image(file, alt = "Question image") {
+
+  return `
+    <div class="question-image-wrap">
+
+      <img
+        class="question-image"
+        src="${encodeURI(file)}"
+        alt="${alt}"
+        onerror="this.style.display='none'">
+
+    </div>
+  `;
+
+}
+
+
+function largeImage(file, alt = "Question image") {
+
+  return `
+    <img
+      class="large-question-image"
+      src="${encodeURI(file)}"
+      alt="${alt}"
+      onerror="this.style.display='none'">
+  `;
+
+}
+  
 <!-- ===================================================== -->
 <!-- INTRODUCTION -->
 <!-- ===================================================== -->
@@ -331,7 +457,42 @@ Start Questionnaire / प्रश्नावली शुरू करें
 
 </section>
 
+const IMG = {
 
+  /* DEMOGRAPHIC */
+
+  urban:
+  "Urban Life.png",
+
+  suburban:
+  "Suburban Life.png",
+
+  rural:
+  "Rural Life.png",
+
+  education:
+  "highest education.jpg",
+
+  joint:
+  "joint family.png",
+
+  nuclear:
+  "nuclear family.png",
+
+  singleParent:
+  "single parent family.png",
+
+  occupation:
+  "occupation.png",
+
+  parentsMonitor:
+  "parents monitor.png",
+
+  health:
+  "health related.png"
+
+};
+  
 <!-- ===================================================== -->
 <!-- DEMOGRAPHIC INFORMATION -->
 <!-- ===================================================== -->
@@ -420,23 +581,65 @@ What type of area do you currently live in?
 आप वर्तमान में किस प्रकार के क्षेत्र में रहते हैं?
 </p>
 
-<label class="option">
-<input type="radio" name="area" value="Urban" required>
-Urban / शहरी क्षेत्र
-</label>
+<div class="image-options">
 
-<label class="option">
-<input type="radio" name="area" value="Suburban">
-Suburban / उपनगरीय क्षेत्र
-</label>
+  <div class="image-option">
 
-<label class="option">
-<input type="radio" name="area" value="Rural">
-Rural / ग्रामीण क्षेत्र
-</label>
+    <img
+      src="Urban Life.png"
+      alt="Urban area">
+
+    <label>
+      <input
+        type="radio"
+        name="area"
+        value="Urban"
+        required>
+
+      Urban / शहरी क्षेत्र
+    </label>
+
+  </div>
+
+
+  <div class="image-option">
+
+    <img
+      src="Suburban Life.png"
+      alt="Suburban area">
+
+    <label>
+      <input
+        type="radio"
+        name="area"
+        value="Suburban">
+
+      Suburban / उपनगरीय क्षेत्र
+    </label>
+
+  </div>
+
+
+  <div class="image-option">
+
+    <img
+      src="Rural Life.png"
+      alt="Rural area">
+
+    <label>
+      <input
+        type="radio"
+        name="area"
+        value="Rural">
+
+      Rural / ग्रामीण क्षेत्र
+    </label>
+
+  </div>
+
+</div>
 
 </section>
-
 
 <!-- ===================================================== -->
 <!-- EDUCATION -->
@@ -446,6 +649,11 @@ Rural / ग्रामीण क्षेत्र
 
 <h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
 
+<img
+  class="large-question-image"
+  src="highest education.jpg"
+  alt="Highest education">
+
 <p>
 What is the highest level of education completed by you?
 <br>
@@ -453,42 +661,66 @@ What is the highest level of education completed by you?
 </p>
 
 <label class="option">
-<input type="radio" name="education" value="High School" required>
+<input
+  type="radio"
+  name="education"
+  value="High School"
+  required>
+
 High School / हाई स्कूल
 </label>
 
 <label class="option">
-<input type="radio" name="education" value="Intermediate">
+<input
+  type="radio"
+  name="education"
+  value="Intermediate">
+
 Intermediate / इंटरमीडिएट
 </label>
 
 <label class="option">
-<input type="radio" name="education" value="Graduate">
+<input
+  type="radio"
+  name="education"
+  value="Graduate">
+
 Graduate / स्नातक
 </label>
 
 <label class="option">
-<input type="radio" name="education" value="Post Graduate">
+<input
+  type="radio"
+  name="education"
+  value="Post Graduate">
+
 Post Graduate / स्नातकोत्तर
 </label>
 
 <label class="option">
-<input type="radio" name="education" value="Doctorate">
+<input
+  type="radio"
+  name="education"
+  value="Doctorate">
+
 Doctorate / डॉक्टरेट
 </label>
 
 <label class="option">
-<input type="radio" name="education" value="Other">
+<input
+  type="radio"
+  name="education"
+  value="Other">
+
 Other / अन्य
 </label>
 
 <input
-type="text"
-name="education_other"
-placeholder="If other, please specify">
+  type="text"
+  name="education_other"
+  placeholder="If other, please specify">
 
 </section>
-
 
 <!-- ===================================================== -->
 <!-- FAMILY -->
@@ -504,23 +736,65 @@ What is the structure of your family?
 आपका परिवार किस प्रकार का है?
 </p>
 
-<label class="option">
-<input type="radio" name="family_structure" value="Joint Family" required>
-Joint Family / संयुक्त परिवार
-</label>
+<div class="image-options">
 
-<label class="option">
-<input type="radio" name="family_structure" value="Nuclear Family">
-Nuclear Family / एकल परिवार
-</label>
+  <div class="image-option">
 
-<label class="option">
-<input type="radio" name="family_structure" value="Single Parent">
-Single Parent / एकल अभिभावक परिवार
-</label>
+    <img
+      src="joint family.png"
+      alt="Joint family">
+
+    <label>
+      <input
+        type="radio"
+        name="family_structure"
+        value="Joint Family"
+        required>
+
+      Joint Family / संयुक्त परिवार
+    </label>
+
+  </div>
+
+
+  <div class="image-option">
+
+    <img
+      src="nuclear family.png"
+      alt="Nuclear family">
+
+    <label>
+      <input
+        type="radio"
+        name="family_structure"
+        value="Nuclear Family">
+
+      Nuclear Family / एकल परिवार
+    </label>
+
+  </div>
+
+
+  <div class="image-option">
+
+    <img
+      src="single parent family.png"
+      alt="Single parent family">
+
+    <label>
+      <input
+        type="radio"
+        name="family_structure"
+        value="Single Parent">
+
+      Single Parent / एकल अभिभावक परिवार
+    </label>
+
+  </div>
+
+</div>
 
 </section>
-
 
 <!-- ===================================================== -->
 <!-- NUMBER OF CHILDREN -->
@@ -572,13 +846,21 @@ More than 3 / 3 से अधिक
 
 <h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
 
+<img
+  class="large-question-image"
+  src="occupation.png"
+  alt="Occupation">
+
 <p>
 What do you do for a living?
 <br>
 आपका व्यवसाय क्या है?
 </p>
 
-<input type="text" name="occupation" required>
+<input
+  type="text"
+  name="occupation"
+  required>
 
 </section>
 
@@ -640,32 +922,6 @@ Prefer not to say / बताना नहीं चाहते
 </section>
 
 
-<!-- ===================================================== -->
-<!-- MONITORING -->
-<!-- ===================================================== -->
-
-<section class="question">
-
-<h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
-
-<p>
-Do you monitor what content your child accesses?
-<br>
-क्या आप अपने बच्चे द्वारा देखी या उपयोग की जाने वाली सामग्री पर नज़र रखते हैं?
-</p>
-
-<label class="option">
-<input type="radio" name="content_monitoring" value="Yes" required>
-Yes / हाँ
-</label>
-
-<label class="option">
-<input type="radio" name="content_monitoring" value="No">
-No / नहीं
-</label>
-
-</section>
-
 
 <!-- ===================================================== -->
 <!-- HEALTH -->
@@ -674,6 +930,11 @@ No / नहीं
 <section class="question">
 
 <h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
+
+<img
+  class="large-question-image"
+  src="health related.png"
+  alt="Health-related condition">
 
 <p>
 Does your child have any health-related condition or ongoing treatment that
@@ -684,17 +945,30 @@ may affect their participation in the study activities?
 </p>
 
 <label class="option">
-<input type="radio" name="health_condition" value="Yes" required>
+<input
+  type="radio"
+  name="health_condition"
+  value="Yes"
+  required>
+
 Yes / हाँ
 </label>
 
 <label class="option">
-<input type="radio" name="health_condition" value="No">
+<input
+  type="radio"
+  name="health_condition"
+  value="No">
+
 No / नहीं
 </label>
 
 <label class="option">
-<input type="radio" name="health_condition" value="Prefer not to disclose">
+<input
+  type="radio"
+  name="health_condition"
+  value="Prefer not to disclose">
+
 Prefer not to disclose / बताना नहीं चाहते
 </label>
 
