@@ -120,6 +120,7 @@ button{border:0;border-radius:10px;padding:13px 28px;font-size:16px;cursor:point
 </section>
 <section class="question">
 <h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
+<img class="large-question-image" src="images/highest education.jpg" alt="Highest education levels" onerror="this.onerror=null;this.src='highest education.jpg';">
 <label class="field-label">3. What is the highest level of education completed by you? / आपकी उच्चतम शैक्षिक योग्यता क्या है? <span class="required">*</span></label><label class="option"><input type="radio" name="education" value="High School" required>High School / हाई स्कूल</label>
 <label class="option"><input type="radio" name="education" value="Intermediate">Intermediate / इंटरमीडिएट</label>
 <label class="option"><input type="radio" name="education" value="Graduate">Graduate / स्नातक</label>
@@ -161,11 +162,44 @@ button{border:0;border-radius:10px;padding:13px 28px;font-size:16px;cursor:point
 <label class="option"><input type="radio" name="annual_income" value="Prefer not to say">Prefer not to say / बताना नहीं चाहते</label>
 </section>
 <section class="question">
-<h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
-<img class="question-image" src="images/health related.png" alt="Health-related condition" onerror="this.onerror=null;this.src='health related.png';">
-<p>9. Does your child have any health-related condition or ongoing treatment that may affect their participation in the study activities? / क्या आपके बच्चे को कोई ऐसी स्वास्थ्य संबंधी समस्या है या उनका कोई उपचार चल रहा है, जो इस अध्ययन की गतिविधियों में उनकी भागीदारी को प्रभावित कर सकता है? <span class="required">*</span></p><label class="option"><input type="radio" name="health_condition" value="Yes" required>Yes / हाँ</label>
-<label class="option"><input type="radio" name="health_condition" value="No">No / नहीं</label>
-<label class="option"><input type="radio" name="health_condition" value="Prefer not to disclose">Prefer not to disclose / बताना नहीं चाहते</label>
+<h2>9. Health and Daily Routine / स्वास्थ्य और दैनिक दिनचर्या</h2>
+<img class="large-question-image" src="images/health related.png" alt="Health and daily routine" onerror="this.onerror=null;this.src='health related.png';">
+<div class="health-screening-questions">
+<p><strong>1. Does your child take any medicines regularly?</strong><br>क्या आपका बच्चा नियमित रूप से कोई दवा लेता है?</p>
+<label class="option"><input type="radio" name="health_medicines" value="Yes" required>Yes / हाँ</label>
+<label class="option"><input type="radio" name="health_medicines" value="No">No / नहीं</label>
+<label class="option"><input type="radio" name="health_medicines" value="Not sure">Not sure / निश्चित नहीं</label>
+
+<hr style="border:0;border-top:1px solid #d7e7f7;margin:22px 0;">
+<p><strong>2. Does your child visit a doctor or hospital regularly for any health-related reason?</strong><br>क्या आपका बच्चा किसी स्वास्थ्य संबंधी कारण से नियमित रूप से डॉक्टर या अस्पताल जाता है?</p>
+<label class="option"><input type="radio" name="health_regular_visits" value="Yes" required>Yes / हाँ</label>
+<label class="option"><input type="radio" name="health_regular_visits" value="No">No / नहीं</label>
+<label class="option"><input type="radio" name="health_regular_visits" value="Not sure">Not sure / निश्चित नहीं</label>
+
+<hr style="border:0;border-top:1px solid #d7e7f7;margin:22px 0;">
+<p><strong>3. Does your child experience any difficulty while sitting for a long time, concentrating on a task, or responding to instructions?</strong><br>क्या आपके बच्चे को लंबे समय तक बैठने, किसी कार्य पर ध्यान केंद्रित करने या निर्देशों का पालन करने में कोई कठिनाई होती है?</p>
+<label class="option"><input type="radio" name="health_sitting_concentration" value="Yes" required>Yes / हाँ</label>
+<label class="option"><input type="radio" name="health_sitting_concentration" value="No">No / नहीं</label>
+<label class="option"><input type="radio" name="health_sitting_concentration" value="Not sure">Not sure / निश्चित नहीं</label>
+
+<hr style="border:0;border-top:1px solid #d7e7f7;margin:22px 0;">
+<p><strong>4. Does your child need any special assistance or arrangements during school activities?</strong><br>क्या आपके बच्चे को स्कूल की गतिविधियों के दौरान किसी विशेष सहायता या व्यवस्था की आवश्यकता होती है?</p>
+<label class="option"><input type="radio" name="health_school_assistance" value="Yes" required>Yes / हाँ</label>
+<label class="option"><input type="radio" name="health_school_assistance" value="No">No / नहीं</label>
+<label class="option"><input type="radio" name="health_school_assistance" value="Not sure">Not sure / निश्चित नहीं</label>
+
+<hr style="border:0;border-top:1px solid #d7e7f7;margin:22px 0;">
+<p><strong>5. Has your child ever been advised to avoid any physical or mental activity for health-related reasons?</strong><br>क्या आपके बच्चे को स्वास्थ्य संबंधी कारणों से कभी किसी शारीरिक या मानसिक गतिविधि से बचने की सलाह दी गई है?</p>
+<label class="option"><input type="radio" name="health_activity_restriction" value="Yes" required>Yes / हाँ</label>
+<label class="option"><input type="radio" name="health_activity_restriction" value="No">No / नहीं</label>
+<label class="option"><input type="radio" name="health_activity_restriction" value="Not sure">Not sure / निश्चित नहीं</label>
+
+<hr style="border:0;border-top:1px solid #d7e7f7;margin:22px 0;">
+<p><strong>6. Is there anything about your child's health or daily routine that you think the researcher should know before the study activities?</strong><br>क्या आपके बच्चे के स्वास्थ्य या दैनिक दिनचर्या से जुड़ी कोई ऐसी बात है जिसके बारे में आप सोचते हैं कि अध्ययन की गतिविधियों से पहले शोधकर्ता को जानना चाहिए?</p>
+<label class="option"><input type="radio" name="health_additional_information" value="Yes" required>Yes / हाँ</label>
+<label class="option"><input type="radio" name="health_additional_information" value="No">No / नहीं</label>
+<label class="option"><input type="radio" name="health_additional_information" value="Not sure">Not sure / निश्चित नहीं</label>
+</div>
 </section>
 <section class="question">
 <h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
@@ -429,7 +463,7 @@ form.addEventListener("submit", async function(event) {
   data.submittedAt = new Date().toISOString();
 
   // Replace this URL only if you create a different deployment.
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbznjzuxTcXaJfNlz2aP2DTxckFbxXjSftfJkcl3ICHNJgXpU1phjXmW7SREgGxFDr0i/exec";
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzLuDNRs216FCy6lN0aYewpf7PYhpYuAVVaOG7uw8s8CUtgCq_fa1KcC9bi_dSDe4DP/exec";
 
   try {
     await fetch(SCRIPT_URL, {
